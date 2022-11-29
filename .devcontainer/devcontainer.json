@@ -1,0 +1,27 @@
+{
+	"name": "Existing Dockerfile",
+	"build": {
+		"dockerfile": "../Dockerfile",
+		"context": "..",
+		"target": "base"
+	},
+
+	"workspaceFolder": "/workspaces/fastapi_sqlmodel_graphql",
+
+
+	"mounts": [
+		"source=fastapi_sqlmodel_graphql_venv,target=${containerWorkspaceFolder}/.venv,type=volume",
+		"source=fastapi_sqlmodel_graphql_vscode-server_extentions,target=/root/.vscode-server/extensions,type=volume"
+	],
+
+	"settings": {},
+
+
+	"extensions": [
+		"ms-python.python",
+		"njpwerner.autodocstring",
+		"visualstudioexptteam.vscodeintellicode"
+	],
+ 
+	"postCreateCommand": "bash -x .devcontainer/postCreateCommand.sh"
+}

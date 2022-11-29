@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "fastapi-sqlmodel-graphql"
+version = "0.1.0"
+description = ""
+authors = ["YutaSawagami"]
+readme = "README.md"
+packages = [{include = "fastapi_sqlmodel_graphql"}]
+
+[tool.poetry.dependencies]
+python = "3.10.8"
+fastapi = "^0.88.0"
+sqlmodel = "^0.0.8"
+strawberry-graphql = "^0.142.2"
+uvicorn = "^0.20.0"
+
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^6.0.0"
+mypy = "^0.991"
+black = "^22.10.0"
+isort = "^5.10.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

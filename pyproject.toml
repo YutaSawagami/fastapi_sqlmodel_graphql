@@ -10,7 +10,7 @@ packages = [{include = "fastapi_sqlmodel_graphql"}]
 python = "3.10.8"
 fastapi = "^0.88.0"
 sqlmodel = "^0.0.8"
-strawberry-graphql = "^0.142.2"
+strawberry-graphql = {extras = ["fastapi"], version = "^0.154.0"}
 uvicorn = "^0.20.0"
 
 

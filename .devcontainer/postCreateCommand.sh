@@ -2,4 +2,4 @@
 apt update
 apt install -y git curl
 pip install poetry
-poetry install
+poetry install --no-root
